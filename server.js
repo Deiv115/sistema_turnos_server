@@ -238,6 +238,9 @@ app.delete("/usuarios/:id", (req, res) => {
   });
 });
 
+app.get("/",(req, res) =>{
+res.sendFile(path.join(__dirname,"public", "turnos.html"));
+});
 
 app.get("/registro", isAuthenticated, isAdmin, (req, res) => {
   res.sendFile(path.join(__dirname, "views/registro.html"));
