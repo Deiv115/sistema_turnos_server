@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+/* Contenedor del video responsivo */
+.video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  /* Video adaptado sin recortes */
+  .video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+  }  
+
+  /* Columna de turnos */
+  .columna-turnos {
+    width: 35%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+    padding: 2rem 1.5rem;
+    position: relative;
+  }
+  
+  /* Tarjetas */
+  .turnos-container {
+    background-color: #ffffff;
+    border: 3px solid #0d6efd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  /* Ícono escudo */
+  .icono-escudo img {
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
+  }
+  
