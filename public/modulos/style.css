@@ -1,0 +1,34 @@
+body {
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.turno-info h2 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+#qrLink {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+#liberarModulo {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}

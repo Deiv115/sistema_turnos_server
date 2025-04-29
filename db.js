@@ -1,15 +1,22 @@
-const mysql = require('mysql2');
+const mysql = require("mysql2");
 
-// Crear un pool de conexiones
 const pool = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0,
+    host: "srv1960.hstgr.io",
+    user: "u985332196_impuestosdgo",
+    password: "DGO2025AL",
+    database: "u985332196_Turnos",
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 });
 
-// Exportar el pool como promesa
-module.exports = pool.promise();
+pool.getConnection((err, connection) => {
+    if (err) {
+        console.error("❌ Error al conectar con MySQL:", err);
+    } else {
+        console.log("✅ Conectado a la base de datos MySQL");
+        connection.release();
+    }
+});
+
+module.exports = pool;
