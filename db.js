@@ -3,7 +3,7 @@ const mysql = require("mysql2");
 const pool = mysql.createPool({
     host: "srv1960.hstgr.io",
     user: "u985332196_impuestosdgo",
-    password: "DGO2025AL",
+    password: "DGO2025Al*",
     database: "u985332196_Turnos",
     waitForConnections: true,
     connectionLimit: 10,
